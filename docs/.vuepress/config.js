@@ -3,8 +3,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态站点生成工具'
+      title: '建方项目文档',
+      description: ''
     }
   },
   head: [
@@ -19,7 +19,7 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   serviceWorker: true,
-  theme: 'vue',
+  // theme: 'vue',
   themeConfig: {
     repo: 'docschina/vuepress',
     editLinks: true,
@@ -32,20 +32,20 @@ module.exports = {
         lastUpdated: '上次更新',
         nav: [
           {
-            text: '指南',
+            text: '接口',
             link: '/guide/',
           },
           {
-            text: '配置参考',
+            text: '需求',
             link: '/config/'
           },
           {
-            text: '默认主题配置',
+            text: '主题',
             link: '/default-theme-config/'
           }
         ],
         sidebar: {
-          '/guide/': genSidebarConfig('指南')
+          '/guide/': genSidebarConfig('接口')
         }
       }
     }
